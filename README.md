@@ -73,14 +73,5 @@ Windows tek dosyalık uygulamasını kaynak koddan üretmek için `build_windows
 
 Yazıcı ayarları ve tema tarayıcının yerel depolamasında saklanır. Ürün verileri bir veritabanına kaydedilmez; sunucu kapandığında bellekteki yükleme de silinir.
 
-## Gizlilik ve GitHub’a yükleme
+emircan...
 
-Uygulama varsayılan olarak yalnızca aynı bilgisayardan (`127.0.0.1`) erişilebilir. Gerçek mağaza/ürün Excel dosyalarını, üretilen EXE’yi ve PyInstaller derleme klasörlerini depoya eklemeyin. `.gitignore` yerel çalışma dosyalarını dışarıda tutar; GitHub’a yüklemeden önce `git status` çıktısını kontrol edin.
-
-Bu projede henüz proje lisansını belirten bir `LICENSE` dosyası yoktur. Depoyu herkese açık yapmadan önce projeniz için uygun lisansı seçip ekleyin. `static/JsBarcode.all.min.js`, kendi MIT lisans dosyasıyla birlikte dağıtılır.
-
-## Testler
-
-```bash
-python -m unittest -v test_fisv9
-```
